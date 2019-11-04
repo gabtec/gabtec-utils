@@ -1,23 +1,23 @@
 {
-  "name": "gabtec-utils",
-  "version": "1.0.0",
-  "description": "Some usefull functions",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabtec/gabtec-utils.git"
-  },
-  "author": "Gabriel Martins",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gabtec/gabtec-utils/issues"
-  },
-  "homepage": "https://github.com/gabtec/gabtec-utils#readme"
+	"name": "gabtec-utils",
+	"version": "1.0.0",
+	"description": "Some usefull functions",
+	"main": "lib/index.js",
+	"directories": {
+		"lib": "lib",
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gabtec/gabtec-utils.git"
+	},
+	"author": "Gabriel Martins",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/gabtec/gabtec-utils/issues"
+	},
+	"homepage": "https://github.com/gabtec/gabtec-utils#readme"
 }
