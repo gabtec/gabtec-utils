@@ -1,2 +1,8 @@
 # gabtec-utils
-My util lib, to learn and to be handy
+
+A bundle of usefull tools,
+to learn and to be handy
+
+# install
+
+npm install --save https://github.com/gabtec/gabtec-utils.git
