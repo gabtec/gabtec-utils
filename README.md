@@ -5,4 +5,6 @@ to learn and to be handy
 
 # install
 
-npm install --save https://github.com/gabtec/gabtec-utils.git
+```javascript
+$ npm install --save https://github.com/gabtec/gabtec-utils.git
+```
