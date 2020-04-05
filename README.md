@@ -42,7 +42,7 @@ try{
   var result = gtValidators.isValidNISS(SSNumber);
   // will return true if is valid
 }catch(err){
-  console.errro(err);
+  console.error(err);
   // will throw a custom ValidationError
   // err.name = 'ValidationError'
   // err.message = 'Invalid NISS Syntax'
