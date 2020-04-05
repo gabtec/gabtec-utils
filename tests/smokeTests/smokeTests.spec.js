@@ -1,4 +1,3 @@
-require('../helpers');
 const lib = require('../../lib/index');
 
 describe('GABTEC-UTILS exposes...', () => {
