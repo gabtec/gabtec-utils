@@ -1,6 +1,7 @@
 # gabtec-utils
 
 [![Build Status](https://travis-ci.org/gabtec/gabtec-utils.svg?branch=master)](https://travis-ci.org/gabtec/gabtec-utils)
+[![Coverage Status](https://coveralls.io/repos/github/gabtec/gabtec-utils/badge.svg?branch=master)](https://coveralls.io/github/gabtec/gabtec-utils?branch=master)
 
 This project started from the nead to learn Github.
 But now it is a package of usefull tools, that I've collected from my other projects.
