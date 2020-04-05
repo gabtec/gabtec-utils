@@ -1,5 +1,6 @@
 # gabtec-utils
 ---
+[![npm version](https://badge.fury.io/js/gabtec-utils.svg)](https://badge.fury.io/js/gabtec-utils)
 [![Build Status](https://travis-ci.org/gabtec/gabtec-utils.svg?branch=master)](https://travis-ci.org/gabtec/gabtec-utils)
 [![Coverage Status](https://coveralls.io/repos/github/gabtec/gabtec-utils/badge.svg?branch=master)](https://coveralls.io/github/gabtec/gabtec-utils?branch=master)
 
@@ -27,7 +28,7 @@ Mainly this lib provides usefull validation functions, for portuguese applicatio
 ## Installation
 
 ```javascript
-$ npm install --save https://github.com/gabtec/gabtec-utils.git
+$ npm i gabtec-utils
 ```
 
 ## Usage
