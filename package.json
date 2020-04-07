@@ -1,35 +1,39 @@
 {
-	"name": "gabtec-utils",
-	"version": "1.0.1",
-	"description": "Some usefull tools",
-	"main": "lib/index.js",
-	"directories": {
-		"lib": "lib",
-		"test": "test"
-	},
-	"scripts": {
-		"test": "mocha ./tests/**/*.spec.js",
-		"test-cov": "nyc --reporter=text --reporter=text-summary npm run test",
+  "name": "gabtec-utils",
+  "version": "1.0.2",
+  "description": "Some usefull tools",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./tests/**/*.spec.js",
+    "test-cov": "nyc --reporter=text --reporter=text-summary npm run test",
     "test-cov-web": "nyc --reporter=lcov --reporter=text-summary npm run test",
     "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/gabtec/gabtec-utils.git"
-	},
-	"author": "Gabriel Martins",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/gabtec/gabtec-utils/issues"
-	},
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabtec/gabtec-utils.git"
+  },
+  "author": "Gabriel Martins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabtec/gabtec-utils/issues"
+  },
   "homepage": "https://github.com/gabtec/gabtec-utils#readme",
-  "dependencies":{},
-	"devDependencies": {
-		"chai": "^4.2.0",
-		"coveralls": "^3.0.11",
-		"mocha": "^7.1.1",
-		"mocha-lcov-reporter": "^1.3.0",
-		"nyc": "^15.0.1",
-		"sinon": "^9.0.1"
-	}
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.11",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "mocha": "^7.1.1",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.0.1",
+    "prettier": "^2.0.3",
+    "sinon": "^9.0.1"
+  }
 }
