@@ -1,0 +1,3 @@
+v1.0.2 -
+  * Add eslint
+  * Try to debug why npm won't update version
