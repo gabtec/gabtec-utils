@@ -1,5 +1,5 @@
 # gabtec-utils
----
+
 [![npm version](https://badge.fury.io/js/gabtec-utils.svg)](https://badge.fury.io/js/gabtec-utils)
 [![Build Status](https://travis-ci.org/gabtec/gabtec-utils.svg?branch=master)](https://travis-ci.org/gabtec/gabtec-utils)
 [![Coverage Status](https://coveralls.io/repos/github/gabtec/gabtec-utils/badge.svg?branch=master)](https://coveralls.io/github/gabtec/gabtec-utils?branch=master)
@@ -24,11 +24,10 @@ Mainly this lib provides usefull validation functions, for portuguese applicatio
 * [License](#license)
 * [Author](#author)
 
-
 ## Installation
 
 ```javascript
-$ npm i gabtec-utils
+npm i gabtec-utils
 ```
 
 ## Usage
@@ -40,7 +39,9 @@ const gtUtils = require('gabtec-utils');
 ```
 
 ### Using a sub-module
+
 The lib exposes 3 sub-modules:
+
 * `cliUtils`  : tools to use on command line output
 * `errors`    : some JS custom validation error, that extend from Error
 * `validators`: functions to validade user inputs
@@ -48,14 +49,18 @@ The lib exposes 3 sub-modules:
 ```js
 const validators = require('gabtec-utils').validators;
 ```
+
 ### Documentation
 
-> ### CLI UTILS:
+> ### CLI UTILS
 
-> #### cleanScreen()
+```diff
+- cleanScreen()
+```
   
   Cleans the command line screen, like ctrl + L, does.
 
+<!-- markdownlint-disable MD024 -->
 
 #### _Example_
 
@@ -79,9 +84,11 @@ if (cluster.isMaster) {
 }
 ```
 
-> ### ERRORS:
+> ### ERRORS
 
-> #### ValidationError()
+```diff
+- ValidationError()
+```
   
   Constructs a custom javascript error.
 
@@ -111,10 +118,11 @@ if(condition){
 // err.details = 'The number must be less them 10.000'
 ```
 
+> ### VALIDATORS
 
-> ### VALIDATORS:
-
-> #### isValidNISS()
+```diff
+- isValidNISS()
+```
   
   Validates a portuguese social security number
 
@@ -145,8 +153,10 @@ try{
 }
 ```
 
-> #### isValidNNU()
-  
+```diff
+- isValidNNU()
+````
+
   Validates a portuguese health system, patient nacional number (NNU)
 
 #### _Arguments_
@@ -176,8 +186,10 @@ try{
 }
 ```
 
-> #### isValidPhoneNumber()
-  
+```diff
+- isValidPhoneNumber()
+````
+
   Validates a portuguese personal phone number (mobile or landline).
   _Note:_ it will throw error on special numbers like 808... (that are not for personal use).
 
@@ -208,8 +220,10 @@ try{
 }
 ```
 
-> #### isValidArrayOfPhoneNumbers()
-  
+```diff
+- isValidArrayOfPhoneNumbers()
+````
+
   Validates a list of portuguese personal phone numbers(mobile or landline).
   _Note:_ for each item on the list, it will use the isValidPhoneNumber() validator.
 
