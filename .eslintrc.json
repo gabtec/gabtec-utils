@@ -12,7 +12,9 @@
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly",
-    "expect": "readonly"
+    "expect": "readonly",
+    "AssertionError": "readonly",
+    "ValidationError": "readonly"
   },
   "parserOptions": {
     "ecmaVersion": 2018
