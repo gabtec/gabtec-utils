@@ -1,3 +1,10 @@
+v1.0.4 -
+  * Add string.crop()
+  * Add string.upperFirst()
+  * Update docs
+v1.0.3 -
+  * Update docs
+  * Publish to npm
 v1.0.2 -
   * Add eslint
   * Try to debug why npm won't update version
