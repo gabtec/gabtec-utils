@@ -2,7 +2,7 @@
 
 const gtUpperFirst = require("../../lib/stringTools/upperFirst");
 
-describe.only("String Tools:: #upperFirst Test Suite", () => {
+describe("String Tools:: #upperFirst Test Suite", () => {
   context("# Happy Path", () => {
     it("should return the srcString with 1st letter UpperCase", () => {
       const srcString = "someword";
