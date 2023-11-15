@@ -1,3 +1,6 @@
+v1.1.1 -
+  * This is a semantic version fix
+  * Updates the dev dependencies
 v1.0.4 -
   * Add string.crop()
   * Add string.upperFirst()
