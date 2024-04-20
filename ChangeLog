@@ -1,3 +1,5 @@
+v2.0.0 -
+  * Updates from commonjs to esm modules
 v1.1.1 -
   * This is a semantic version fix
   * Updates the dev dependencies

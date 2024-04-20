@@ -1,16 +1,12 @@
-const isValidArrayOfPhoneNumbers = require("../../lib/validators/isValidArrayOfPhoneNumbers");
+import { expect } from "chai";
+import { isValidArrayOfPhoneNumbers } from "../../lib/validators/isValidArrayOfPhoneNumbers.js";
+import { ValidationError } from "../../lib/index.js";
 
 describe("VALIDATORS:: #isValidArrayOfPhoneNumbers Test Suite", () => {
   it("should pass -- Happy Path", () => {
     const list = ["236210021", 236210021, "961589237", 961589237];
 
-    try {
-      expect(isValidArrayOfPhoneNumbers(list)).to.be.true;
-    } catch (err) {
-      if (err instanceof AssertionError) {
-        throw err;
-      }
-    }
+    expect(isValidArrayOfPhoneNumbers(list)).to.not.throw;
   });
 
   it("should fail if Array items not String | Number", () => {
@@ -19,9 +15,6 @@ describe("VALIDATORS:: #isValidArrayOfPhoneNumbers Test Suite", () => {
     try {
       isValidArrayOfPhoneNumbers(list);
     } catch (err) {
-      if (err instanceof AssertionError) {
-        throw err;
-      }
       expect(err.name).to.be.eql("ValidationError");
       expect(err.message).to.be.eql("Invalid PhoneNumber Type");
       expect(err.details).to.be.eql(
@@ -43,9 +36,6 @@ describe("VALIDATORS:: #isValidArrayOfPhoneNumbers Test Suite", () => {
       isValidArrayOfPhoneNumbers({});
       isValidArrayOfPhoneNumbers(NaN);
     } catch (err) {
-      if (err instanceof AssertionError) {
-        throw err;
-      }
       expect(err.name).to.be.eql("ValidationError");
       expect(err.message).to.be.eql("Invalid PhoneList Type");
       expect(err.details).to.be.eql("PhoneList must be an Array.");
@@ -59,9 +49,6 @@ describe("VALIDATORS:: #isValidArrayOfPhoneNumbers Test Suite", () => {
     try {
       isValidArrayOfPhoneNumbers(list);
     } catch (err) {
-      if (err instanceof AssertionError) {
-        throw err;
-      }
       expect(err.name).to.be.eql("ValidationError");
       expect(err.message).to.be.eql("Invalid PhoneNumber Syntax");
       expect(err.details).to.be.eql(

@@ -35,7 +35,11 @@ npm i gabtec-utils
 ### Using the all lib
 
 ```js
-const gtUtils = require('gabtec-utils');
+// import ALL
+import * as gtu from "gabtec-utils";
+
+// import some
+import { truncate, crop } from 'gabtec-utils'
 ```
 
 ### Using a sub-module

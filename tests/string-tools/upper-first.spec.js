@@ -1,13 +1,12 @@
-// require('../helpers');
-
-const gtUpperFirst = require("../../lib/stringTools/upperFirst");
+import { expect } from "chai";
+import { upperFirst } from "../../lib/index.js";
 
 describe("String Tools:: #upperFirst Test Suite", () => {
   context("# Happy Path", () => {
     it("should return the srcString with 1st letter UpperCase", () => {
       const srcString = "someword";
       const outString = "Someword";
-      const result = gtUpperFirst(srcString);
+      const result = upperFirst(srcString);
 
       expect(result).to.be.eql(outString);
     });
@@ -15,7 +14,7 @@ describe("String Tools:: #upperFirst Test Suite", () => {
     it("should return the srcSetence with 1st letter UpperCase", () => {
       const srcString = "some word";
       const outString = "Some word";
-      const result = gtUpperFirst(srcString);
+      const result = upperFirst(srcString);
 
       expect(result).to.be.eql(outString);
     });
@@ -23,7 +22,7 @@ describe("String Tools:: #upperFirst Test Suite", () => {
     it("should return untouched, if string is number", () => {
       const srcString = "1234567890";
       const outString = "1234567890";
-      const result = gtUpperFirst(srcString);
+      const result = upperFirst(srcString);
 
       expect(result).to.be.eql(outString);
     });
@@ -31,7 +30,7 @@ describe("String Tools:: #upperFirst Test Suite", () => {
     it("should return the srcString untouched, if already upperFirst", () => {
       const srcString = "Smallwrd.";
       const outString = "Smallwrd.";
-      const result = gtUpperFirst(srcString);
+      const result = upperFirst(srcString);
 
       expect(result).to.be.eql(outString);
     });
@@ -43,7 +42,7 @@ describe("String Tools:: #upperFirst Test Suite", () => {
       const outString = "Param must be a string.";
 
       expect(() => {
-        gtUpperFirst(srcString);
+        upperFirst(srcString);
       }).to.throw(outString);
     });
   });
