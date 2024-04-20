@@ -1,4 +1,4 @@
-[![npm version](https://badge.fury.io/js/gabtec-utils.svg)](https://badge.fury.io/js/gabtec-utils)
+![GitHub Release](https://img.shields.io/github/v/release/gabtec/gabtec-utils)
 ![tests](https://github.com/github/docs/actions/workflows/test.yml/badge.svg?branch=main)
 
 # gabtec-utils
