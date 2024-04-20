@@ -13,9 +13,9 @@
   },
   "scripts": {
     "test": "mocha ./tests/**/*.spec.js",
-    "test-cov": "nyc --reporter=text --reporter=text-summary npm run test",
-    "test-cov-web": "nyc --reporter=lcov --reporter=text-summary npm run test",
-    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+    "cover:unit": "nyc --silent npm run test",
+    "cover:report": "nyc report --reporter=lcov --reporter=text --reporter=text-summary",
+    "test:coverage": "npm run cover:unit && npm run cover:report"
   },
   "repository": {
     "type": "git",
