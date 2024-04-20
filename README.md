@@ -25,6 +25,7 @@ Mainly this lib provides usefull validation functions, for portuguese applicatio
 * [Author](#author)
 
 ## Installation
+Requires nodejs version >= 16
 
 ```javascript
 npm i gabtec-utils
