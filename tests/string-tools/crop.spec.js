@@ -1,13 +1,12 @@
-// require('../helpers');
-
-const gtCrop = require("../../lib/stringTools/crop");
+import { expect } from "chai";
+import { crop } from "../../lib/index.js";
 
 describe("String Tools:: #crop Test Suite", () => {
   context("# Happy Path", () => {
     it("should return the srcString cropped", () => {
       const srcString = "this is a very long sentence.";
       const outString = "this is a ve...";
-      const result = gtCrop(srcString, 12);
+      const result = crop(srcString, 12);
 
       expect(result).to.be.eql(outString);
     });
@@ -15,7 +14,7 @@ describe("String Tools:: #crop Test Suite", () => {
     it("should not cast numbers, and crop ok", () => {
       const srcString = "1234567890";
       const outString = "12345...";
-      const result = gtCrop(srcString, 5);
+      const result = crop(srcString, 5);
 
       expect(result).to.be.eql(outString);
     });
@@ -23,7 +22,7 @@ describe("String Tools:: #crop Test Suite", () => {
     it("should return the srcString untouched", () => {
       const srcString = "smallwrd.";
       const outString = "smallwrd.";
-      const result = gtCrop(srcString, 10);
+      const result = crop(srcString, 10);
 
       expect(result).to.be.eql(outString);
     });
@@ -35,7 +34,7 @@ describe("String Tools:: #crop Test Suite", () => {
       const outString = "First param must be a string.";
 
       expect(() => {
-        gtCrop(srcString, 12);
+        crop(srcString, 12);
       }).to.throw(outString);
     });
 
@@ -44,7 +43,7 @@ describe("String Tools:: #crop Test Suite", () => {
       const outString = "Second param must be a number.";
 
       expect(() => {
-        gtCrop(srcString, "not a number");
+        crop(srcString, "not a number");
       }).to.throw(outString);
     });
 
@@ -53,7 +52,7 @@ describe("String Tools:: #crop Test Suite", () => {
       const outString = "Second param must be a number.";
 
       expect(() => {
-        gtCrop(srcString, "5");
+        crop(srcString, "5");
       }).to.throw(outString);
     });
   });

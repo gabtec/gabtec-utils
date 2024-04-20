@@ -1,13 +1,12 @@
-// require('../helpers');
-
-const gtu = require("../../lib/index.js").string;
+import { expect } from "chai";
+import { zeroPadding } from "../../lib/index.js";
 
 describe("String Tools:: #zeroPadding() Test Suite", () => {
   context("# Happy Path", () => {
     it("should return '01' if input 1", () => {
       const input = 1;
       const output = "01";
-      const result = gtu.zeroPadding(input);
+      const result = zeroPadding(input);
 
       expect(result).to.be.eql(output);
     });
@@ -15,7 +14,7 @@ describe("String Tools:: #zeroPadding() Test Suite", () => {
     it("should return '01' if input '1'", () => {
       const input = "1";
       const output = "01";
-      const result = gtu.zeroPadding(input);
+      const result = zeroPadding(input);
 
       expect(result).to.be.eql(output);
     });
@@ -23,7 +22,7 @@ describe("String Tools:: #zeroPadding() Test Suite", () => {
     it("should return '01' if input '01", () => {
       const input = "01";
       const output = "01";
-      const result = gtu.zeroPadding(input);
+      const result = zeroPadding(input);
 
       expect(result).to.be.eql(output);
     });

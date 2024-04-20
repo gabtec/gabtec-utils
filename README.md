@@ -1,14 +1,35 @@
-# gabtec-utils
-
 [![npm version](https://badge.fury.io/js/gabtec-utils.svg)](https://badge.fury.io/js/gabtec-utils)
-[![Build Status](https://travis-ci.org/gabtec/gabtec-utils.svg?branch=master)](https://travis-ci.org/gabtec/gabtec-utils)
-[![Coverage Status](https://coveralls.io/repos/github/gabtec/gabtec-utils/badge.svg?branch=master)](https://coveralls.io/github/gabtec/gabtec-utils?branch=master)
+![tests](https://github.com/github/docs/actions/workflows/test.yml/badge.svg?branch=main)
+
+# gabtec-utils
 
 This project started from the nead to learn Github.
 But now it is a package of usefull tools, that I've collected from my other projects.
 The docs are a work in progress, for now.
 Mainly this lib provides usefull validation functions, for portuguese applications.
 
+## Installation
+Requires nodejs version >= 16
+
+```javascript
+npm i gabtec-utils
+```
+## ESM vs CommonJS
+
+Version 2.0.0 introduces the ESM.
+
+## Usage
+
+```js
+// import ALL utilities
+import * as gtu from "gabtec-utils";
+
+// import some
+import { truncate, crop } from 'gabtec-utils'
+```
+
+
+## Summary
 * [Installation](#installation)
 * [Usage](#usage)
 * [Documentation](#documentation)
@@ -24,18 +45,17 @@ Mainly this lib provides usefull validation functions, for portuguese applicatio
 * [License](#license)
 * [Author](#author)
 
-## Installation
-
-```javascript
-npm i gabtec-utils
-```
 
 ## Usage
 
 ### Using the all lib
 
 ```js
-const gtUtils = require('gabtec-utils');
+// import ALL
+import * as gtu from "gabtec-utils";
+
+// import some
+import { truncate, crop } from 'gabtec-utils'
 ```
 
 ### Using a sub-module
