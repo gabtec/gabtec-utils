@@ -29,7 +29,7 @@
   "homepage": "https://github.com/gabtec/gabtec-utils#readme",
   "devDependencies": {
     "chai": "5.1.0",
-    "mocha": "10.4.0",
+    "mocha": "^10.8.2",
     "nyc": "15.1.0",
     "sinon": "17.0.1"
   }
